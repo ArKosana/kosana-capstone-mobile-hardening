@@ -1,0 +1,102 @@
+SLIDE 1 - TITLE
+Automated Mobile App Hardening + Evidence-driven Pentest
+From detection to remediation — a reproducible pipeline
+Kosana Ankamma Rao
+kosana.ar@gmail.com
+github.com/Kosana/kosana-capstone-mobile-hardening
+
+Speaker Note: "Hi, I'm Kosana. This project demonstrates building a fast, repeatable pipeline that finds app vulnerabilities, shows exploits, applies fixes, and proves remediation with complete evidence."
+
+SLIDE 2 - ELEVATOR PITCH
+A complete pipeline that finds mobile app vulnerabilities, demonstrates a proof-of-concept exploit, and applies automated hardening — producing auditor-ready evidence.
+
+Speaker Note: "This isn't just about finding bugs - it's about building a reproducible process that delivers verifiable security improvements."
+
+SLIDE 3 - PROBLEM STATEMENT
+• Component hijacking via exported activities
+• Data exposure through insecure backups
+• Lack of automated security hardening
+• Need for reproducible evidence in security assessments
+
+Speaker Note: "Mobile apps often expose sensitive components without protection, allowing attackers to bypass authentication and access critical functions directly."
+
+SLIDE 4 - OBJECTIVES
+1. Scan - Automated vulnerability detection
+2. Exploit - Demonstrate real-world risk
+3. Patch - Apply security hardening  
+4. Verify - Confirm remediation
+5. Report - Document complete evidence
+
+Speaker Note: "We follow a systematic approach: find it, prove it, fix it, verify it, and document everything."
+
+SLIDE 5 - TOOLS & TECHNOLOGIES
+• apktool - APK decompilation/rebuilding
+• jadx - Java source analysis
+• adb - Android device communication
+• Python - Automated security patching
+• Git - Version control & documentation
+
+Speaker Note: "Using open-source tools, we built an automated pipeline that's accessible and reproducible."
+
+SLIDE 6 - CRITICAL VULNERABILITIES FOUND
+• DoTransfer - Money transfer screen exposed
+• ViewStatement - Account statements exposed
+• PostLogin - Main banking interface exposed
+• ChangePassword - Password change exposed
+• TrackUserContentProvider - Data access exposed
+• MyBroadCastReceiver - Broadcast receiver exposed
+• allowBackup="true" - Data extraction possible
+
+Speaker Note: "We found 6 exported components in a banking app - any could be accessed without login, plus insecure backups allowing data theft."
+
+SLIDE 7 - EXPLOIT DEMONSTRATION
+COMPONENT HIJACKING CONFIRMED:
+- Banking activities accessible without authentication
+- Money transfers, account data, password changes exposed
+- Real-world impact: Unauthorized financial transactions
+
+Speaker Note: "We proved the vulnerability by launching banking screens directly - no login required. This is component hijacking in action."
+
+SLIDE 8 - AUTOMATED REMEDIATION
+SECURITY HARDENING APPLIED:
+- All exported components secured (exported="false")
+- Backup protection enabled (allowBackup="false") 
+- Python-based automated patching
+- Complete verification testing
+
+Speaker Note: "Our automated script patched all vulnerabilities. The same components now return 'Permission Denial' when accessed externally."
+
+SLIDE 9 - EVIDENCE & VERIFICATION
+PRODUCED:
+- Before/after static scan comparisons
+- Executive summary with technical findings
+- Automated patch scripts
+- Installation verification logs
+- Component hijacking proof
+- Patch effectiveness testing
+
+Speaker Note: "Every step is documented - from original vulnerabilities to verified fixes. This is auditor-ready evidence."
+
+SLIDE 10 - RESULTS & IMPACT
+BEFORE: Component hijacking possible, data exposure risk
+AFTER: All components secured, exploits blocked
+IMPACT: Production-ready security pipeline
+
+FUTURE WORK:
+- CI/CD integration
+- Extended security checks
+- MobSF integration
+
+Speaker Note: "We transformed a vulnerable banking app into a secure one, with a reproducible process that can be integrated into development pipelines."
+
+SLIDE 11 - REPRODUCTION & CONTACT
+COMPLETE REPRODUCTION:
+- GitHub repository with all code
+- Step-by-step instructions
+- All evidence and logs included
+
+Kosana Ankamma Rao
+kosana.ar@gmail.com
+github.com/Kosana
+
+Speaker Note: "Everything is open and reproducible. Thank you for your attention - I'm happy to answer any questions about the pipeline or results."
