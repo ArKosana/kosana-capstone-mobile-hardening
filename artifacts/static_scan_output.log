@@ -1,0 +1,38 @@
+[*] Creating output directory: /home/dekalibor/capstone_mobile/artifacts/static_scan
+[*] Unpacking APK with apktool...
+[*] Extracting AndroidManifest.xml...
+[*] Checking for exported activities/services/receivers/providers...
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:24:        <activity android:exported="true" android:label="@string/title_activity_post_login" android:name="com.android.insecurebankv2.PostLogin"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:26:        <activity android:exported="true" android:label="@string/title_activity_do_transfer" android:name="com.android.insecurebankv2.DoTransfer"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:27:        <activity android:exported="true" android:label="@string/title_activity_view_statement" android:name="com.android.insecurebankv2.ViewStatement"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:28:        <provider android:authorities="com.android.insecurebankv2.TrackUserContentProvider" android:exported="true" android:name="com.android.insecurebankv2.TrackUserContentProvider"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:29:        <receiver android:exported="true" android:name="com.android.insecurebankv2.MyBroadCastReceiver">
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:34:        <activity android:exported="true" android:label="@string/title_activity_change_password" android:name="com.android.insecurebankv2.ChangePassword"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:16:        <activity android:label="@string/app_name" android:name="com.android.insecurebankv2.LoginActivity">
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:22:        <activity android:label="@string/title_activity_file_pref" android:name="com.android.insecurebankv2.FilePrefActivity" android:windowSoftInputMode="adjustNothing|stateVisible"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:23:        <activity android:label="@string/title_activity_do_login" android:name="com.android.insecurebankv2.DoLogin"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:24:        <activity android:exported="true" android:label="@string/title_activity_post_login" android:name="com.android.insecurebankv2.PostLogin"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:25:        <activity android:label="@string/title_activity_wrong_login" android:name="com.android.insecurebankv2.WrongLogin"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:26:        <activity android:exported="true" android:label="@string/title_activity_do_transfer" android:name="com.android.insecurebankv2.DoTransfer"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:27:        <activity android:exported="true" android:label="@string/title_activity_view_statement" android:name="com.android.insecurebankv2.ViewStatement"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:34:        <activity android:exported="true" android:label="@string/title_activity_change_password" android:name="com.android.insecurebankv2.ChangePassword"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:35:        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:36:        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/smali/com/google/android/gms/ads/internal/zze.smali:467:    const-string v5, "Missing AdActivity with android:configChanges in AndroidManifest.xml. You must have the following declaration within the <application> element: <activity android:name=\"com.google.android.gms.ads.AdActivity\" android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" />"
+/home/dekalibor/capstone_mobile/artifacts/static_scan/decompiled/AndroidManifest.xml:15:    <application android:allowBackup="true" android:debuggable="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+[*] Searching for common hard-coded keys or secrets...
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/android/support/v4/app/NotificationCompat.java:86:    public static final int VISIBILITY_SECRET = -1;
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/com/android/insecurebankv2/ChangePassword.java:45:    private static final String PASSWORD_PATTERN = "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})";
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/com/android/insecurebankv2/ChangePassword.java:110:            ChangePassword.this.pattern = Pattern.compile(ChangePassword.PASSWORD_PATTERN);
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/com/google/android/gms/internal/zzjr.java:33:    BAD_PASSWORD("WeakPassword"),
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/com/google/android/gms/analytics/internal/zzah.java:249:            zze("Error trying to parse the hardcoded host url", e);
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/com/google/android/gms/analytics/internal/zzah.java:325:            zze("Error trying to parse the hardcoded host url", e);
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/com/google/android/gms/analytics/internal/zzah.java:338:            zze("Error trying to parse the hardcoded host url", e);
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/com/google/android/gms/location/places/PlacesStatusCodes.java:27:                return "PLACES_API_KEY_INVALID";
+/home/dekalibor/capstone_mobile/artifacts/static_scan/jadx/sources/com/google/android/gms/location/places/PlacesStatusCodes.java:37:                return "PLACES_API_KEY_EXPIRED";
+[*] Listing files in assets and res/raw (possible insecure storage)...
+total 12
+drwxrwxr-x   2 dekalibor dekalibor 4096 Oct 20 11:23 .
+drwxrwxr-x 122 dekalibor dekalibor 4096 Oct 20 11:23 ..
+-rw-rw-r--   1 dekalibor dekalibor 2358 Oct 20 11:23 gtm_analytics
+[*] Static scan completed. Results in /home/dekalibor/capstone_mobile/artifacts/static_scan

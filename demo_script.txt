@@ -1,0 +1,49 @@
+DEMO SCRIPT - 3-5 MINUTES
+
+[START RECORDING]
+
+"Hi, I'm Kosana. This demo shows my automated mobile app security hardening pipeline."
+
+[Terminal - Show clean workspace]
+"First, let me show you the project structure with all our automation scripts."
+
+ls -la scripts/
+
+[Terminal]
+"Now I run the static scan to find vulnerabilities in our banking app..."
+
+./scripts/static_scan.sh
+
+"The scan found critical exported components - banking activities that can be accessed without any authentication."
+
+[Terminal]
+"Let me demonstrate the exploit - component hijacking..."
+
+./scripts/component_hijack_poc.sh
+
+"As you can see, all banking screens open without login. This is a critical security vulnerability - attackers can bypass authentication completely."
+
+[Terminal]
+"Now I apply the automated security patch..."
+
+./scripts/patch_and_rebuild.sh
+
+"The patch successfully secures all vulnerable components using Python-based XML modification."
+
+[Terminal]
+"Let's verify the exploit is now blocked..."
+
+./scripts/verify_patch.sh
+
+"Perfect! All exploits now return 'Permission Denial' errors. The vulnerability is completely fixed."
+
+"The pipeline successfully identified, demonstrated, and fixed a critical security vulnerability, producing complete evidence for auditors."
+
+[STOP RECORDING]
+
+RECORDING TIPS:
+- Speak clearly and confidently
+- Show terminal commands and outputs clearly
+- Keep each demo segment under 1 minute
+- Emphasize the before/after contrast
+- Show the evidence files at the end

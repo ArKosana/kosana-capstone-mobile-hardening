@@ -1,0 +1,5 @@
+Testing if patched components are now blocked...
+Testing DoTransfer: ✅ BLOCKED (Security working)
+Testing ViewStatement: ✅ BLOCKED (Security working)
+Testing PostLogin: ✅ BLOCKED (Security working)
+Testing ChangePassword: ✅ BLOCKED (Security working)
