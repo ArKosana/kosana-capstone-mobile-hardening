@@ -30,7 +30,7 @@ public class PlayerEntityCreator implements Parcelable.Creator<PlayerEntity> {
     }
 
     @Override // android.os.Parcelable.Creator
-    /* renamed from: zzds */
+    /* renamed from: zzds, reason: merged with bridge method [inline-methods] */
     public PlayerEntity createFromParcel(Parcel parcel) {
         int iZzab = zza.zzab(parcel);
         int iZzg = 0;

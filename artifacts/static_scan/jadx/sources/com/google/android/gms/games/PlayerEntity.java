@@ -35,7 +35,7 @@ public final class PlayerEntity extends GamesDowngradeableSafeParcel implements 
         }
 
         @Override // com.google.android.gms.games.PlayerEntityCreator, android.os.Parcelable.Creator
-        /* renamed from: zzds, reason: merged with bridge method [inline-methods] */
+        /* renamed from: zzds */
         public PlayerEntity createFromParcel(Parcel parcel) {
             if (PlayerEntity.zzd(PlayerEntity.zznE()) || PlayerEntity.zzca(PlayerEntity.class.getCanonicalName())) {
                 return super.createFromParcel(parcel);
